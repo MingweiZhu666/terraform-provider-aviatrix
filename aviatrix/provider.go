@@ -170,6 +170,7 @@ func Provider() *schema.Provider {
 			"aviatrix_vpn_profile":                                    resourceAviatrixProfile(),
 			"aviatrix_vpn_user":                                       resourceAviatrixVPNUser(),
 			"aviatrix_vpn_user_accelerator":                           resourceAviatrixVPNUserAccelerator(),
+			"aviatrix_option_set":                                     resourceAviatrixOptionSet(),
 		},
 		DataSourcesMap: map[string]*schema.Resource{
 			"aviatrix_account":                          dataSourceAviatrixAccount(),
