@@ -19,22 +19,22 @@ func resourceAviatrixOptionSet() *schema.Resource {
 			"name": {
 				Type:        schema.TypeString,
 				Required:    true,
-				Description: "",
+				Description: "Option Set name.",
 			},
 			"search_domains": {
 				Type:        schema.TypeList,
-				Required:    true,
+				Optional:    true,
 				Description: "",
 				Elem: &schema.Resource{
 					Schema: map[string]*schema.Schema{
 						"search_domain": {
 							Type:        schema.TypeString,
-							Required:    true,
+							Optional:    true,
 							Description: "",
 						},
 						"server": {
 							Type:        schema.TypeString,
-							Required:    true,
+							Optional:    true,
 							Description: "",
 						},
 					},
@@ -42,23 +42,23 @@ func resourceAviatrixOptionSet() *schema.Resource {
 			},
 			"name_servers": {
 				Type:        schema.TypeList,
-				Required:    true,
+				Optional:    true,
 				Description: "",
 				Elem: &schema.Resource{
 					Schema: map[string]*schema.Schema{
 						"server": {
 							Type:        schema.TypeString,
-							Required:    true,
+							Optional:    true,
 							Description: "",
 						},
 						"dot": {
 							Type:        schema.TypeBool,
-							Required:    true,
+							Optional:    true,
 							Description: "",
 						},
 						"transport": {
 							Type:        schema.TypeString,
-							Required:    true,
+							Optional:    true,
 							Description: "",
 						},
 					},
